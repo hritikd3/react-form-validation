@@ -59,7 +59,8 @@ class Form extends Component {
   errorClass(error) {
     return error.length === 0 ? "" : "has-error";
   }
-
+ 
+ 
   render() {
     return (
       <form className="demoForm">
@@ -120,7 +121,7 @@ class Form extends Component {
         <div className="">
           <label htmlFor="age">Age</label>
           <input
-            type="number"
+            type="numbers"
             className="form-control"
             name="age"
             placeholder="Age"
@@ -128,12 +129,7 @@ class Form extends Component {
         </div>
         <button
           type="submit"
-          onClick={(e) => {
-            alert(
-              "Do you want to submit your Name,Email, Pasword,Confirm password,age"
-            );
-          }}
-          className="btn btn-primary m-3"
+          onClick={this.alertHandler} className="btn btn-primary m-3"
           disabled={!this.state.formValid}
         >
           Sign up
