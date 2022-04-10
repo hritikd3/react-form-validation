@@ -118,7 +118,7 @@ class Form extends Component {
           />
         </div>
         <div className="">
-          <label htmlFor="password">Age</label>
+          <label htmlFor="age">Age</label>
           <input
             type="number"
             className="form-control"
